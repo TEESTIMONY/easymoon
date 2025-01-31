@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #D6C2A5;
+    overflow:auto;
+
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    font-family: "Gamja Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4C3B33;
+    border: 2px solid black;
+    border-radius: 25px;
+    max-width: 60%;
+    margin: 20px auto;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-container img{
+    border-radius: 20%;
+    border: 1px solid #fff;
+
+  }
+  
+  .logo-new {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .brand-name {
+    font-size: 28px;
+    font-family: "Barrio", serif;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-text-stroke: 1px #F4E3AC;
+
+  }
+  
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-buttons a{
+    background-color: white;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 5px;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.829);
+
+  }
+
+  .hero-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    gap: 100px;
+  }
+
+  .hero-text {
+    color: #4C3B33;
+    max-width: 900PX;
+  }
+
+  .hero-text h1{
+    margin: 0;
+    margin-top: 100px;
+    font-family: "Knewave", serif;
+    font-weight: 700;
+    font-size: 46px;
+    -webkit-text-stroke: 2px black;
+
+  }
+
+  .hero-text span{
+    font-size: 120px;
+  }
+  .hero-text p{
+    color: black;
+    margin: 0;
+    font-family: "Chewy", serif;
+    font-size: 50PX;
+  }
+
+  .hero-text .btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    
+
+  }
+
+  .hero-text .btns a{
+    background-color: #4C3B33;
+    border: 2px solid black;
+    font-family: "Knewave", serif;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color: #F7ECD6;
+    border-radius: 30px;
+    font-size: 30px;
+    
+  }
+
+
+ .hero-img{
+  width: 400px;
+  height: 400px;
+  background-color: #F7ECD6;
+  border-radius: 50%;
+  padding: 5px;
+
+ }
+
+ .hero-img img{
+  position: relative;
+  width: 100%; /* Adjust this if needed */
+  height: 100%;
+  border-radius: 50%;
+ }
+
+ .scrolling-banner {
+    padding-top: 30px;
+    position: absolute;
+    font-family: "Knewave", serif;
+    font-size: 20px;
+    top:800px;
+    max-width: 100%;
+    height: 60px;
+    overflow: hidden;
+    background-color: #4C3B33; /* Dark background for the banner */
+    border-top:2px solid #000;
+    border-bottom:2px solid #000;
+    margin-top: 90px;
+    rotate: -3deg;
+  
+  }
+  
+  .banner-content {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite; /* Smooth scrolling animation */
+  }
+  
+  .logo {
+    padding: 0 30px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+   /* Keyframes for scrolling effect */
+   @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  
+
+  @media (max-width: 768px) {
+    .navbar {
+      align-items: center;
+      font-size: 18px;
+      padding: 15px;
+      max-width: 100%;
+      margin: 10px auto;
+    }
+  
+    .logo-container {
+      gap: 5px;
+    }
+  
+    .logo-new {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .brand-name {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-buttons {
+      gap: 15px;
+    }
+  
+    .hero-section {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      margin-top: 10px;
+      gap: 20px;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+      margin-top: 0;
+    }
+  
+    .hero-text h1 {
+      font-size: 24px;
+      -webkit-text-stroke: 2px black;
+      margin-top: 20px;
+      text-align: left;
+    }
+  
+    .hero-text p {
+      font-size: 30px;
+    }
+
+    .hero-text span{
+        font-size: 60px;
+      }
+  
+    .hero-img {
+      width: 90%;
+      height: 90%;
+      margin-top: 20px;
+    }
+    .hero-text .btns{
+        padding: 10px;
+        gap: 20px;
+    }
+    .hero-text .btns a{
+        width: 100px;
+        height: auto;
+        font-size: 20px;
+    }
+  
+    .social-btn {
+      gap: 15px;
+      width: 50%;
+      padding-left: 10px;
+  
+    }
+  
+    .social-btn a {
+      display: inline-block;
+      font-size: 36px;
+      padding: 12px;
+      width: 30px;
+      height: 30px;
+  
+    }
+  
+    .tel-btn {
+      rotate: 5deg;
+    }
+  
+    .button{
+      margin-top: 36px;
+      font-size: 14px;
+    }
+  
+    .scrolling-banner{
+      height: 40px;
+      padding-top: 10px;
+    }
+  
+    
+  
+    
+
+  
+  
+  }
+  
