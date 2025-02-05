@@ -25,3 +25,9 @@ function showPopup() {
         popup.classList.remove('show');
     }, 2000);
 }
+
+window.onload = function () {
+    const popup = document.getElementById("pinksale-popup");
+    popup.classList.add("active");
+};
+
